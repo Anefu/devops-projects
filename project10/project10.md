@@ -5,7 +5,7 @@
     ```
 - ## Open TCP ports 80 and 443 on the lb security group to allow HTTP and HTTPS connections
 - ## Update /etc/hosts with the internal ip and hostname for local DNS resolution (only do this is you launched a new lb server)
-- ## Install NGINX
+- ## Install NGINX 
     ```
     sudo apt update
     sudo apt install nginx

@@ -6,7 +6,7 @@
     default_tags = {
       Description = "Created by Terraform"
     }
-  }
+  } 
   ```
 - Create 4 private subnets
   ```
@@ -35,7 +35,7 @@
     {
       Name = format("%s-%s!", aws_vpc.main.id,"IG")
     })
-  }
+  } 
   ```
   The format function replaces the %s value with the values given after the comma.
 
@@ -289,7 +289,7 @@
     }
 
     egress {
-        from_port   = 0
+        from_port   = 0 
         to_port     = 0
         protocol    = "-1"
         cidr_blocks = ["0.0.0.0/0"]
@@ -457,7 +457,7 @@
   ```
   ** This requires a launch template for tooling to be created before hand. Create the same resources for Wordpress
 
-## Storage and Database
+## Storage and Database 
 - Create a KMS Key for EFS, add the following to kms.tf
   ```
   resource "aws_kms_key" "kms" {

@@ -1,5 +1,5 @@
 # Step 1: Introducing Dynamic Assignment Into our Structure
-- ## In your https://github.com/<your-name>/ansible-config-mgt GitHub repository start a new branch and call it dynamic-assignments
+- ## In your https://github.com/<your-name>/ansible-config-mgt GitHub repository start a new branch and call it dynamic-assignments 
 - ## Create a new folder, name it dynamic-assignments. Then inside this folder, create two new files and name them env-vars.yml and default.yml. We will instruct site.yml to include this playbook later. For now, let us keep building up the structure.
   ## Your repo should have a structure like this:
     ```
@@ -70,7 +70,7 @@
         - { role: nginx, when: enable_nginx_lb and load_balancer_is_required }
         - { role: apache, when: enable_apache_lb and load_balancer_is_required }
     ```
-    sites.yml file:
+    sites.yml file: 
     ```
     ---
     - import_playbook: ../static-assignments/common.yml

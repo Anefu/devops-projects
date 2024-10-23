@@ -28,7 +28,7 @@
     - sudo apache2ctl configtest (Test configurations)
     - sudo systemctl reload apache2 (Reload Apache2 service)
   ![](vhost.jpg)
-
+ 
 **Step 6: Enable PHP on the Website**
   - Commands:
     - sudo vim /etc/apache2/mods-enabled/dir.conf (Edit dir.conf to place index.php at higher precedence)
